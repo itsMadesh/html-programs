@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>MENU</title>
+    <style>
+        body {
+            /* height:100%; */
+            background-color: rgb(157, 157, 196);
+            /* background-image: url('C:/Users/mades/pictures/pexels-monstera-7412035.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        .topnav {
+            background-color: rgb(87, 87, 87);
+            padding: 15px
+        }
+
+        .topnav a {
+            float: right;
+            color: black;
+            background-color: whitesmoke;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: rgba(201, 17, 48, 0.493);
+        }
+
+        .topnav a.active {
+            background-color: rgb(48, 112, 207);
+        }
+
+        .topnav input[type=text],
+        .topnav button {
+            /* align-content:middle; */
+            padding: 10px;
+            border: none;
+            display: table-caption;
+        }
+
+        .menu {
+            height: 100%;
+            width: 200px;
+            background-color: whitesmoke;
+            display: flexbox;
+            border-radius: 7px;
+            overflow: scroll;
+            position: absolute;
+        }
+
+        .menu a {
+            color: black;
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .menu a:hover,
+        .dropdown-content a:hover,
+        .dropbtn:hover {
+            background-color: rgba(201, 17, 48, 0.493);
+        }
+
+        .menu a.active,
+        .dropdown-content a:active,
+        .dropbtn:active {
+            background-color: rgb(48, 112, 207);
+        }
+
+        .dropdown {
+            position: relative;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            border: none;
+            width: 100%;
+            font-size: Inherit;
+            padding: 15px;
+            background-color: whitesmoke;
+            font-family: 'Times New Roman';
+            border-radius: 7px;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            font-size: 16px;
+            width: 100%;
+            background-color: darkgrey;
+            border-radius: 7px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        .dropdown-content a {
+            color: black;
+            width: 120px;
+            padding: 15px;
+            border-radius: 7px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    .syllabus{
+        margin-left: 210px;
+    }    
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="about_me.html">About me</a>
+        <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+        <a href="menu.html" class='active'><i class="bi bi-house"></i>Home</a>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="bi bi-search"></i></button>
+        <i Style="margin-left:30%;color: darkred;padding:15px;background-color: aliceblue;border-radius: 7px;">SMART ACCESS</i>
+    </div>
+    <div class='menu'>
+        <a href="menu.html" class='active'><i class="bi bi-menu-down"></i>MENU</a>
+        <a href="time_table.html"><i class="bi bi-calendar3"></i>Time Table</a>
+        <a href="links.html"><i class="bi bi-link"></i>LMS Links</a>
+        <div class="dropdown">
+            <button class="dropbtn" class="active" ><i class="bi bi-book"></i>Syllabus<i class="bi bi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="maths.html" class="active">Maths</a>
+                <a href="ds.html">Data Struture</a>
+                <a href="de.html">Digital Electronics</a>
+                <a href="ad.html">Principal of analog and digital</a>
+                <a href="co.html">Computer Organization</a>
+                <a href="dbms.html">DBMS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="bi bi-book-fill"></i>Cat<i class="bi bi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="cat-1.html">Cat-1</a>
+                <a href="cat-2.html">Cat-2</a>
+                <a href="cat-3.html">Cat-3</a>
+            </div>
+        </div>
+    </div>
+    <div class="syllabus">
+        <h1 style="text-align: center;">MATHS</h1>
+        <h2>UNIT-I <b>LOGIC AND PROOFS</b></h2>
+        <p>Propositional Logic – Propositional equivalences – Predicates and quantifiers – Nested quantifiers –
+            Rules of inference – Introduction to proofs – Proof methods and strategy – Normal forms –Applications 
+            to switching circuits.</p>  
+        <h2>UNIT-II <b>COMBINATORICS </b></h2>
+        <p>Mathematical induction – Strong induction – The pigeon hole principle – Recurrence relations – Solving
+            linear recurrence relations using generating functions – Inclusion and Exclusion Principle and its 
+            applications.</p> 
+        <h2>UNIT-III <b></b>GRAPHS</h2>   
+        <p>Graphs – Graph terminology and special types of graphs – Subgraphs – Matrix representation of graphs 
+            and graph isomorphism – Connectivity – Eulerian and Hamilton graphs.</p> 
+        <h2>UNIT-IV <b>ALGEBRAIC STRUCTURES</b></h2>       
+        <p>Algebraic systems – Semigroups and monoids – Groups – Subgroups Homo morphisms – Normal 
+            subgroup and coset – Lagrange’s theorem – Definitions and examples of Rings and Fields.</p>       
+        <h2>UNIT-V <b>LATTICES AND BOOLEAN ALGEBRA</b></h2>   
+        <p>Partial ordering – Posets – Lattices as Posets – Properties of lattices – Lattices as algebraic systems – 
+            Sublattices – Direct product and Homomorphism ; Boolean algebra – Stone’s representation Theorem.</p>     
+    </div>    
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>MENU</title>
+    <style>
+        body {
+            /* height:100%; */
+            background-color: rgb(157, 157, 196);
+            /* background-image: url('C:/Users/mades/pictures/pexels-monstera-7412035.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        .topnav {
+            background-color: rgb(87, 87, 87);
+            padding: 15px
+        }
+
+        .topnav a {
+            float: right;
+            color: black;
+            background-color: whitesmoke;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: rgba(201, 17, 48, 0.493);
+        }
+
+        .topnav a.active {
+            background-color: rgb(48, 112, 207);
+        }
+
+        .topnav input[type=text],
+        .topnav button {
+            /* align-content:middle; */
+            padding: 10px;
+            border: none;
+            display: table-caption;
+        }
+
+        .menu {
+            height: 100%;
+            width: 200px;
+            background-color: whitesmoke;
+            display: flexbox;
+            border-radius: 7px;
+            overflow: scroll;
+            position: absolute;
+        }
+
+        .menu a {
+            color: black;
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .menu a:hover,
+        .dropdown-content a:hover,
+        .dropbtn:hover {
+            background-color: rgba(201, 17, 48, 0.493);
+        }
+
+        .menu a.active,
+        .dropdown-content a:active,
+        .dropbtn:active {
+            background-color: rgb(48, 112, 207);
+        }
+
+        .dropdown {
+            position: relative;
+            width: 200px;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            border: none;
+            width: 100%;
+            font-size: Inherit;
+            padding: 15px;
+            background-color: whitesmoke;
+            font-family: 'Times New Roman';
+            border-radius: 7px;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            font-size: 16px;
+            width: 100%;
+            background-color: darkgrey;
+            border-radius: 7px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        .dropdown-content a {
+            color: black;
+            width: 120px;
+            padding: 15px;
+            border-radius: 7px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown:hover,.dropdown-content {
+            display: block;
+        }
+    .syllabus{
+        margin-left: 210px;
+    }    
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="about_me.html">About me</a>
+        <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+        <a href="menu.html" class='active'><i class="bi bi-house"></i>Home</a>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="bi bi-search"></i></button>
+        <i Style="margin-left:30%;color: darkred;padding:15px;background-color: aliceblue;border-radius: 7px;">SMART ACCESS</i>
+
+    </div>
+    <div class='menu'>
+        <a href="menu.html" class='active'><i class="bi bi-menu-down"></i>MENU</a>
+        <a href="time_table.html"><i class="bi bi-calendar3"></i>Time Table</a>
+        <a href="links.html"><i class="bi bi-link"></i>LMS Links</a>
+        <div class="dropdown">
+            <button class="dropbtn" class="active"><i class="bi bi-book"></i>Syllabus<i class="bi bi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="maths.html">Maths</a>
+                <a href="ds.html">Data Struture</a>
+                <a href="de.html">Digital Electronics</a>
+                <a href="ad.html" class="active">Principal of analog and digital</a>
+                <a href="co.html">Computer Organization</a>
+                <a href="dbms.html">DBMS</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="bi bi-book-fill"></i>Cat<i class="bi bi-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="cat-1.html">Cat-1</a>
+                <a href="cat-2.html">Cat-2</a>
+                <a href="cat-3.html">Cat-3</a>
+            </div>
+        </div>
+    </div>
+    <div class="syllabus">
+        <h1 style="text-align: center;">PRINCIPAL OF A&D COMMMUNICATION</h1>
+        <h2>UNIT-I <b>SIGNALS AND TRANSMISSION OF SIGNALS </b></h2>
+        <p>Signals: Classification of signals - Impulse function, Fourier series, Linear system response, 
+            Fourier transform - properties, Distortionless transmission, Convolution, Correlation: 
+            Autocorrelation, Frequency translation: Frequency multiplexing - Antenna practicability -
+            Narrow banding.</p>  
+        <h2>UNIT-II <b>LINEAR MODULATION</b></h2>
+        <p>Amplitude modulation: DSBFC - DSBSC - SSB, Modulators: Multiplier modulators -
+            Nonlinear modulators - Switching modulators - Ring modulators, Demodulation of DSBFC: 
+            Rectifier detector - Envelope detector.</p> 
+        <h2>UNIT-III <b>EXPONENTIAL MODULATION</b></h2>   
+        <p>Instantaneous frequency, Angle modulation: Bandwidth - Bessel's function - Carson rule, FM 
+            and PM generation, Relation between FM and PM, FM generation and demodulation, FM 
+            receiver, Pre-emphasis and De-emphasis.</p> 
+        <h2>UNIT-IV <b>DIGITAL MODULATION AND DIGITAL TRANSMISSION </b></h2>       
+        <p>ASK, FSK, BPSK: Binary - QPSK - 8 PSK - M-ary PSK, QAM: 8 - 16, PCM: Sampling -
+            Quantization - Differential PCM - Delta PCM - Binary polar signalling, Matched filter.</p>       
+        <h2>UNIT-V <b>MULTIPLEXING TECHNIQUES</b></h2>   
+        <p>TDMA, FDMA, CDMA: PN sequence generation, Frequency hopping - Time hopping.</p>     
+    </div>    
+</body>
+
+</html>
